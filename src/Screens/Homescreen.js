@@ -34,7 +34,7 @@ const Homescreen = ({navigation}) => {
   };
   useEffect(() => {
     getData();
-  });
+  },[]);
 
   const matchCardHandler = data => {
     console.log('id', data?.id, data?.event_id);
